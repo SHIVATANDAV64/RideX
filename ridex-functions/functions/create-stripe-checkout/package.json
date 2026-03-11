@@ -1,0 +1,9 @@
+{
+  "name": "create-stripe-checkout",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "node-appwrite": "^22.1.3",
+    "stripe": "^19.1.0"
+  }
+}

@@ -1,0 +1,38 @@
+/// <reference types="vite/client" />
+
+interface ImportMetaEnv {
+	readonly VITE_APPWRITE_ENDPOINT?: string;
+	readonly VITE_APPWRITE_PROJECT_ID?: string;
+	readonly VITE_APPWRITE_DB_ID?: string;
+	readonly VITE_APPWRITE_TABLE_USERS?: string;
+	readonly VITE_APPWRITE_TABLE_DRIVER_PROFILES?: string;
+	readonly VITE_APPWRITE_TABLE_RIDES?: string;
+	readonly VITE_APPWRITE_TABLE_RIDE_OFFERS?: string;
+	readonly VITE_APPWRITE_TABLE_PAYMENTS?: string;
+	readonly VITE_APPWRITE_TABLE_PAYMENT_METHODS?: string;
+	readonly VITE_APPWRITE_TABLE_EMERGENCY_CONTACTS?: string;
+	readonly VITE_APPWRITE_TABLE_RATINGS?: string;
+	readonly VITE_APPWRITE_TABLE_PROMO_CODES?: string;
+	readonly VITE_APPWRITE_TABLE_SUPPORT_TICKETS?: string;
+	readonly VITE_APPWRITE_BUCKET_AVATARS?: string;
+	readonly VITE_APPWRITE_BUCKET_DRIVER_DOCS?: string;
+	readonly VITE_APPWRITE_FUNCTION_MATCH_DRIVER?: string;
+	readonly VITE_APPWRITE_FUNCTION_DRIVER_TOGGLE?: string;
+	readonly VITE_APPWRITE_FUNCTION_ACCEPT_RIDE?: string;
+	readonly VITE_APPWRITE_FUNCTION_CREATE_CASH_BOOKING?: string;
+	readonly VITE_APPWRITE_FUNCTION_CREATE_STRIPE_CHECKOUT?: string;
+	readonly VITE_APPWRITE_FUNCTION_COMPLETE_STRIPE_BOOKING?: string;
+	readonly VITE_APPWRITE_FUNCTION_START_TRIP?: string;
+	readonly VITE_APPWRITE_FUNCTION_END_TRIP?: string;
+	readonly VITE_APPWRITE_FUNCTION_RAISE_SUPPORT_TICKET?: string;
+	readonly VITE_APPWRITE_FUNCTION_ADMIN_UPDATE_TICKET?: string;
+	readonly VITE_APPWRITE_FUNCTION_ADMIN_UPDATE_PAYMENT?: string;
+	readonly VITE_APPWRITE_FUNCTION_SUBMIT_RATING?: string;
+	readonly VITE_APPWRITE_FUNCTION_APPLY_PROMO?: string;
+	readonly VITE_APPWRITE_FUNCTION_SEND_SOS?: string;
+	readonly VITE_OSRM_BASE_URL?: string;
+}
+
+interface ImportMeta {
+	readonly env: ImportMetaEnv;
+}
